@@ -1,0 +1,59 @@
+@import "./../../../../assets/styles/colors.scss";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1440px;
+  background-color: var(--color-night-gray);
+  padding: 80px;
+}
+
+.logo a {
+  font-family: "K2D", sans-serif;
+  font-size: 30px;
+  background: linear-gradient(90deg, #fa6e00, #e60026, #fa6e00);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: waveAnimation 6s ease infinite;
+  @keyframes waveAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  list-style-type: none;
+  padding: 0;
+  li a {
+    color: var(--color-ashen-gray);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--color-orange-sunset);
+    }
+    &:focus,
+    &.active {
+      color: var(--color-orange-sunset);
+    }
+  }
+}
