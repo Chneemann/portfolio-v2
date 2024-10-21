@@ -90,12 +90,12 @@ section {
   }
   .me {
     position: absolute;
-    top: -163px;
+    top: -155px;
     right: 100px;
     left: 0;
-    width: 520px;
+    width: auto;
     height: 781px;
-    clip-path: ellipse(95% 100% at 50% 0); /* Formt das Bild in eine Ellipse */
+    clip-path: ellipse(74% 100% at 50% 0);
     z-index: 2;
   }
 }
