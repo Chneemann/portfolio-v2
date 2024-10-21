@@ -22,8 +22,23 @@
         <img src="./../../../../img/landing-page/mail.svg" alt="Mail" />
       </a>
     </div>
+    <div class="hero-button">
+      <a href="#contact-me">
+        <app-button
+          [buttonText]="'Contact me'"
+          [isButtonColored]="true"
+        ></app-button>
+      </a>
+      <!-- TODO add cv -->
+      <a href="download/cv.pdf" download="cv.pdf">
+        <app-button
+          [buttonText]="'Download CV'"
+          [isButtonColored]="false"
+        ></app-button>
+      </a>
+    </div>
   </div>
-  <div class="images">
+  <div class="hero-images">
     <img
       class="ellipse"
       src="./../../../../img/landing-page/ellipse.svg"

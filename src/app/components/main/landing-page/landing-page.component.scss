@@ -58,7 +58,7 @@ section {
   width: fit-content;
   gap: 36px;
   margin: 0;
-  padding: 36px 0;
+  padding: 48px 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   cursor: pointer;
   img {
@@ -66,13 +66,15 @@ section {
     height: 40px;
     transition: opacity 0.3s ease, transform 0.3s ease;
     &:hover {
-      opacity: 0.8;
       transform: scale(1.1);
+      filter: brightness(0) saturate(100%) invert(69%) sepia(71%)
+        saturate(5127%) hue-rotate(3deg) brightness(108%) contrast(99%)
+        drop-shadow(0 4px 15px rgba(255, 140, 0, 0.5));
     }
   }
 }
 
-.images {
+.hero-images {
   display: flex;
   justify-content: center;
   position: relative;
@@ -95,4 +97,13 @@ section {
     clip-path: ellipse(95% 100% at 50% 0); /* Formt das Bild in eine Ellipse */
     z-index: 2;
   }
+}
+
+.hero-button {
+  display: flex;
+  justify-content: flex-start;
+  width: fit-content;
+  gap: 24px;
+  margin: 0;
+  padding: 24px 0;
 }

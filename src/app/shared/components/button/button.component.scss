@@ -1,0 +1,41 @@
+@import "../../../../assets/styles/colors.scss";
+
+button {
+  width: fit-content;
+  height: fit-content;
+  padding: 12px 40px;
+  border-radius: 8px;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--color-white);
+    text-align: center;
+    text-shadow: 1px 1px 2px var(--color-black);
+  }
+  &:hover {
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.5);
+    transform: translateY(-2px);
+  }
+}
+
+.button-orange {
+  background: linear-gradient(90deg, #fd6f00, #e46400);
+  &:hover {
+    background: linear-gradient(90deg, #ff8a00, #ff6a00);
+  }
+}
+
+.button-gray {
+  border: 2px solid var(--color-ashen-gray);
+  background: var(--color-night-gray);
+  &:hover {
+    border-color: var(--color-orange-sunset);
+    p {
+      color: var(--color-orange-sunset);
+    }
+  }
+}
