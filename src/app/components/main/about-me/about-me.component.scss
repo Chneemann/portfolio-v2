@@ -1,9 +1,7 @@
 @import "../../../../assets/styles/colors.scss";
 
 section {
-  margin-top: 250px;
-  width: 100%;
-  max-width: 1440px;
+  margin-top: 200px;
 }
 
 .headline {
@@ -31,8 +29,8 @@ section {
   align-items: center;
   padding: 24px;
   img {
-    width: 64px;
-    height: 64px;
+    width: 100px;
+    height: 100px;
     padding-right: 36px;
     margin: 0;
   }

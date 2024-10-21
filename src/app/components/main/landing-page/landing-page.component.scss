@@ -1,10 +1,9 @@
 @import "../../../../assets/styles/colors.scss";
 
 section {
-  margin-top: 250px;
   display: flex;
-  width: 100%;
-  max-width: 1440px;
+  justify-content: space-between;
+  margin-top: 100px;
 }
 
 .hero {
@@ -79,11 +78,11 @@ section {
   justify-content: center;
   position: relative;
   margin-top: 70px;
-  width: 50%;
+  width: 40%;
   .ellipse {
     position: absolute;
     top: 0px;
-    left: 0;
+    left: -60px;
     width: 618px;
     height: 618px;
     z-index: 1;
@@ -91,8 +90,7 @@ section {
   .me {
     position: absolute;
     top: -155px;
-    right: 100px;
-    left: 0;
+    right: 5px;
     width: auto;
     height: 781px;
     clip-path: ellipse(74% 100% at 50% 0);
@@ -110,8 +108,8 @@ section {
 }
 
 .hero-experience {
-  width: 562px;
-  height: 130px;
+  width: fit-content;
+  height: fit-content;
   padding: 18px;
   margin: 24px 0 0 0;
   border-radius: 8px;
