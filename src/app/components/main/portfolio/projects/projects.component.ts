@@ -16,7 +16,7 @@ export class ProjectsComponent {
       image: 'videoflix.png',
       languages: 'Django REST | Python | Angular | TypeScript',
       description:
-        'A video platform for uploading and viewing videos in different quality levels. Enjoy a user-friendly interface for an optimal video experience, whether you want to share or discover content.',
+        'Video platform for sharing and discovering videos. Upload, view, and stream content in various quality levels, all within a user-friendly interface designed to enhance the video experience.',
       linkLiveTest: 'https://videoflix.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/videoflix',
     },
@@ -25,7 +25,7 @@ export class ProjectsComponent {
       image: 'dabubble.png',
       languages: 'Angular | TypeScript | Firebase',
       description:
-        'A powerful and user-friendly slack or discord clone that enables seamless team communication, collaboration, and organization.',
+        'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
       linkLiveTest: 'https://dabubble.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/dabubble',
     },
@@ -34,7 +34,7 @@ export class ProjectsComponent {
       image: 'join-angular.png',
       languages: 'Angular | TypeScript | Firebase',
       description:
-        'A task manager modeled on the kanban system. Create and organize tasks using drag-and-drop functions, assign users and categories to ensure efficient management.',
+        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories to ensure efficient management.',
       linkLiveTest: 'https://join.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/join',
     },
