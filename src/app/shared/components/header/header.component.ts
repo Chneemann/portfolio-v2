@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
     let currentSection = '';
 
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 60;
+      const sectionTop = section.offsetTop - 240;
       const sectionHeight = section.offsetHeight;
 
       if (
