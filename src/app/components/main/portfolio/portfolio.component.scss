@@ -1,0 +1,25 @@
+@import "../../../../assets/styles/colors.scss";
+
+section {
+  margin-top: 100px;
+}
+
+.headline {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: 48px;
+}
+
+.description {
+  text-align: center;
+  padding-bottom: 12px;
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+}
