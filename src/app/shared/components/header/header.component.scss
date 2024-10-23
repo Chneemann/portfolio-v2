@@ -13,28 +13,6 @@ header {
   right: 0;
 }
 
-.logo a {
-  font-family: "K2D", sans-serif;
-  font-size: 30px;
-  background: linear-gradient(90deg, #fa6e00, #e60026, #fa6e00);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: waveAnimation 6s ease infinite;
-  @keyframes waveAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 50% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-}
-
 nav ul {
   display: flex;
   justify-content: center;
