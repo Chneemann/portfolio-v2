@@ -1,0 +1,79 @@
+@import "./../../../../../assets/styles/colors.scss";
+
+section {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-left: 12px;
+    &:hover {
+      transform: scale(1.2);
+      filter: brightness(0) saturate(100%) invert(38%) sepia(62%)
+        saturate(3062%) hue-rotate(341deg) brightness(105%) contrast(98%);
+    }
+  }
+}
+
+h2 {
+  font-size: 61px;
+  font-weight: 700;
+  width: 80%;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 24px 0 12px 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 24px 0;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
+}
+
+ul {
+  padding: 12px;
+  li {
+    padding: 5px;
+  }
+}
+
+a {
+  color: var(--color-orange-sunset);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Media queries */
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 47px;
+  }
+
+  h3 {
+    font-size: 27px;
+  }
+}
