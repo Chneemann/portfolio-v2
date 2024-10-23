@@ -1,0 +1,61 @@
+@import "../../../../assets/styles/colors.scss";
+
+section {
+  margin-top: 100px;
+  scroll-margin-top: 230px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-white);
+  margin-bottom: 48px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .left {
+    width: 40%;
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+      padding-bottom: 20px;
+    }
+    .line {
+      position: absolute;
+      top: 62px;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background-color: #1cdae6;
+    }
+    p {
+      padding: 20px 0;
+    }
+  }
+  .spacer {
+    width: 5%;
+  }
+  .right {
+    width: 55%;
+    z-index: 2;
+  }
+}
+
+.btn-up {
+  position: absolute;
+  right: 24px;
+  bottom: 3px;
+  img {
+    cursor: pointer;
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(69%) sepia(71%)
+        saturate(5127%) hue-rotate(3deg) brightness(108%) contrast(99%);
+    }
+  }
+}

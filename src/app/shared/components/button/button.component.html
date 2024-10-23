@@ -1,3 +1,6 @@
-<button [ngClass]="isButtonColored ? 'button-orange' : 'button-gray'">
+<button
+  [ngClass]="isButtonColored ? 'button-orange' : 'button-gray'"
+  [disabled]="disabled"
+>
   <p>{{ buttonText }}</p>
 </button>

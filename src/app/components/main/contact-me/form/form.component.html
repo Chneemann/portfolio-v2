@@ -1,0 +1,101 @@
+<form
+  (ngSubmit)="onSubmit(contactForm)"
+  #contactForm="ngForm"
+  onsubmit="return false"
+  class="contact-formular"
+>
+  <input
+    id="name"
+    type="text"
+    name="name"
+    #name="ngModel"
+    placeholder="Name"
+    [(ngModel)]="contactData.name"
+    autocomplete="on"
+    (click)="mailSendTextReset()"
+    required
+  />
+  <div class="error-msg">
+    @if (!name.valid && name.touched) {
+    <span>Please enter your name</span>
+    }
+  </div>
+  <input
+    id="email"
+    type="email"
+    name="email"
+    #email="ngModel"
+    placeholder="Email"
+    [(ngModel)]="contactData.email"
+    autocomplete="on"
+    (click)="mailSendTextReset()"
+    required
+  />
+  <div class="error-msg">
+    @if (!email.valid && email.touched) {
+    <span>Please enter your email</span>
+    } @else { @if (email.touched && !checkIfUserEmailIsValid(contactData.email))
+    {
+    <span>This is not a valid email format</span>
+    } }
+  </div>
+  <textarea
+    id="msg"
+    rows="6"
+    name="msg"
+    #msg="ngModel"
+    minlength="10"
+    placeholder="Message"
+    [(ngModel)]="contactData.message"
+    (click)="mailSendTextReset()"
+    required
+  ></textarea>
+  <div class="error-msg">
+    @if (!msg.valid && msg.touched) {
+    <span>More than 10 letters are required</span>
+    }
+  </div>
+  <div class="privacy-policy">
+    <input
+      type="checkbox"
+      id="checkbox"
+      name="checkbox"
+      #checkbox="ngModel"
+      [(ngModel)]="checkboxState"
+      (click)="mailSendTextReset()"
+      required
+    />
+    <label for="checkbox">
+      I've read the
+      <a href="privacy-policy" target="_blank"> privacy policy </a>
+      and agree to the processing of my data as outlined.
+    </label>
+  </div>
+  <div class="error-msg">
+    @if (!checkbox.valid && checkbox.touched) {
+    <span>You have to accept the privacy policy</span>
+    }
+  </div>
+  @if (mailSend) {
+  <p>
+    Your message has been sent successfully.<br />
+    I will contact you shortly.
+  </p>
+  }
+  <div class="button">
+    <app-button
+      [buttonText]="'Send'"
+      [isButtonColored]="false"
+      [disabled]="
+        name.invalid ||
+        !contactData.name ||
+        email.invalid ||
+        !contactData.email ||
+        msg.invalid ||
+        !contactData.message ||
+        !checkboxState ||
+        !checkIfUserEmailIsValid(contactData.email)
+      "
+    ></app-button>
+  </div>
+</form>

@@ -1,0 +1,94 @@
+@import "../../../../../assets/styles/colors.scss";
+
+form {
+  width: 100%;
+}
+
+.contact-formular {
+  display: flex;
+  flex-direction: column;
+  input,
+  textarea {
+    background-color: var(--color-ebony);
+    border: 1px solid var(--color-black);
+    border-radius: 10px;
+    padding: 16px;
+    margin: 8px 0;
+    resize: none;
+    color: var(--color-white);
+    &:hover {
+      border-color: var(--color-orange-sunset);
+    }
+    &:focus {
+      border-color: var(--color-orange-sunset);
+      outline: none;
+    }
+  }
+  p {
+    text-align: center;
+    border-color: var(--color-orange-sunset);
+    color: var(--color-orange-sunset);
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+}
+
+.button {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.privacy-policy {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  input[type="checkbox"] {
+    margin: 0 10px 0 15px;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background-image: url("./../../../../../assets/img/contact-me/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: var(--color-night-gray);
+    transform: scale(0.5);
+    cursor: pointer;
+    &:checked {
+      background-image: url("./../../../../../assets/img/contact-me/checkbox-checked.svg");
+      &:hover {
+        filter: drop-shadow(0 4px 15px rgba(255, 140, 0, 0.5));
+      }
+    }
+    &:hover {
+      filter: drop-shadow(0 4px 15px rgba(255, 140, 0, 0.5));
+    }
+  }
+  label {
+    font-size: 14px;
+    font-weight: 400;
+    padding-right: 20px;
+    a {
+      text-decoration: none;
+      color: var(--color-orange-sunset);
+      transition: color 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.error-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
+  padding: 3px;
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-honey-orange);
+  }
+}
