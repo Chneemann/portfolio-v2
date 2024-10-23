@@ -26,7 +26,7 @@ nav ul {
   gap: 60px;
   list-style-type: none;
   padding: 0;
-  margin: 36px 0;
+  margin: 42px 0;
   li a {
     color: var(--color-ashen-gray);
     text-decoration: none;
@@ -67,7 +67,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin: 36px 0;
+  margin: 42px 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   a {
     font-size: 20px;
@@ -96,6 +96,7 @@ nav ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
   .line {
     width: 530px;
     height: 1px;
@@ -107,6 +108,19 @@ nav ul {
     font-weight: 700;
     line-height: 19.2px;
     letter-spacing: 0.03em;
+    padding: 6px 0;
     color: var(--color-steel-gray);
+    a {
+      text-decoration: none;
+      color: var(--color-steel-gray);
+      transition: color 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        color: var(--color-orange-sunset);
+      }
+    }
+  }
+  span {
+    padding: 0 9px;
   }
 }
