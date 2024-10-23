@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'app-header',
@@ -11,9 +12,22 @@ import { LogoComponent } from '../logo/logo.component';
 })
 export class HeaderComponent implements OnInit {
   activeSection: string = '';
+  currentLang: string = '';
+
+  constructor(private langService: LanguageService) {}
 
   ngOnInit(): void {
     this.onScroll();
+    this.getCurrentLanguage();
+  }
+
+  getCurrentLanguage() {
+    this.currentLang = this.langService.getCurrentLanguage();
+  }
+
+  switchLanguage(lang: string) {
+    this.langService.switchLanguage(lang);
+    this.getCurrentLanguage();
   }
 
   @HostListener('window:scroll', [])

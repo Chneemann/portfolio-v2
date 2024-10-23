@@ -20,6 +20,15 @@
           >Contact me</a
         >
       </li>
+      <li>
+        <a (click)="switchLanguage('en')" [class.active]="currentLang === 'en'">
+          EN
+        </a>
+        /
+        <a (click)="switchLanguage('de')" [class.active]="currentLang === 'de'">
+          DE
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
