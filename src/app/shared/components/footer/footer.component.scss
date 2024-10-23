@@ -1,0 +1,19 @@
+@import "./../../../../assets/styles/colors.scss";
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-ebony);
+  height: 426px;
+  width: calc(100vw - 6px);
+  padding: 40px 0 24px 0;
+  margin-top: 100px;
+  margin-left: calc(-50vw + 50%);
+}
+
+footer .content {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 80px;
+}
