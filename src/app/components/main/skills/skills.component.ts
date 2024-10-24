@@ -8,4 +8,19 @@ import { TranslateDirective, TranslatePipe } from '@codeandweb/ngx-translate';
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss',
 })
-export class SkillsComponent {}
+export class SkillsComponent {
+  skills = [
+    { src: './../../assets/img/skills/angular.svg', alt: 'angular' },
+    { src: './../../assets/img/skills/typescript.svg', alt: 'typescript' },
+    { src: './../../assets/img/skills/python.svg', alt: 'python' },
+    { src: './../../assets/img/skills/django.svg', alt: 'django' },
+    { src: './../../assets/img/skills/javascript.svg', alt: 'javascript' },
+    { src: './../../assets/img/skills/html.svg', alt: 'html' },
+    { src: './../../assets/img/skills/css.svg', alt: 'css' },
+    { src: './../../assets/img/skills/git.svg', alt: 'git' },
+    { src: './../../assets/img/skills/firebase.svg', alt: 'firebase' },
+    { src: './../../assets/img/skills/sql.svg', alt: 'sql' },
+    { src: './../../assets/img/skills/scrum.svg', alt: 'scrum' },
+    { src: './../../assets/img/skills/rest-api.svg', alt: 'rest-api' },
+  ];
+}

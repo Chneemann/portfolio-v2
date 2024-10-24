@@ -2,18 +2,15 @@
   <div class="my-skills">
     <div class="my-skills-experience">
       <div class="my-skills-list">
-        <img src="./../../assets/img/skills/angular.svg" alt="angular" />
-        <img src="./../../assets/img/skills/typescript.svg" alt="typescript" />
-        <img src="./../../assets/img/skills/python.svg" alt="python" />
-        <img src="./../../assets/img/skills/django.svg" alt="django" />
-        <img src="./../../assets/img/skills/javascript.svg" alt="javascript" />
-        <img src="./../../assets/img/skills/html.svg" alt="html" />
-        <img src="./../../assets/img/skills/css.svg" alt="css" />
-        <img src="./../../assets/img/skills/git.svg" alt="git" />
-        <img src="./../../assets/img/skills/firebase.svg" alt="firebase" />
-        <img src="./../../assets/img/skills/sql.svg" alt="sql" />
-        <img src="./../../assets/img/skills/scrum.svg" alt="scrup" />
-        <img src="./../../assets/img/skills/rest-api.svg" alt="rest-api" />
+        @for (skill of skills; track skill; let i = $index) {
+        <div
+          data-aos="fade-right"
+          data-aos-anchor=".my-skills"
+          [attr.data-aos-delay]="(i + 1) * 100"
+        >
+          <img [src]="skill.src" [alt]="skill.alt" />
+        </div>
+        }
       </div>
     </div>
     <div class="spacer"></div>
