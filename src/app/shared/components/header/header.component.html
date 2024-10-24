@@ -1,6 +1,14 @@
 <header>
   <app-logo></app-logo>
   <nav>
+    <input type="checkbox" id="navigation" #navigationCheckbox />
+    <label for="navigation" title="open-navigation">
+      <div class="burger-icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </label>
     <ul>
       <li>
         <a href="#about-me" [class.active]="activeSection === 'about-me'">{{
