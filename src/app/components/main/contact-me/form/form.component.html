@@ -9,7 +9,7 @@
     type="text"
     name="name"
     #name="ngModel"
-    placeholder="Name"
+    placeholder="{{ 'contact-me-form.name' | translate }}"
     [(ngModel)]="contactData.name"
     autocomplete="on"
     (click)="mailSendTextReset()"
@@ -17,7 +17,7 @@
   />
   <div class="error-msg">
     @if (!name.valid && name.touched) {
-    <span>Please enter your name</span>
+    <span>{{ "contact-me-form.invalid-name" | translate }}</span>
     }
   </div>
   <input
@@ -25,7 +25,7 @@
     type="email"
     name="email"
     #email="ngModel"
-    placeholder="Email"
+    placeholder="{{ 'contact-me-form.email' | translate }}"
     [(ngModel)]="contactData.email"
     autocomplete="on"
     (click)="mailSendTextReset()"
@@ -33,10 +33,10 @@
   />
   <div class="error-msg">
     @if (!email.valid && email.touched) {
-    <span>Please enter your email</span>
+    <span>{{ "contact-me-form.invalid-email0" | translate }}</span>
     } @else { @if (email.touched && !checkIfUserEmailIsValid(contactData.email))
     {
-    <span>This is not a valid email format</span>
+    <span>{{ "contact-me-form.invalid-email1" | translate }}</span>
     } }
   </div>
   <textarea
@@ -45,14 +45,14 @@
     name="msg"
     #msg="ngModel"
     minlength="10"
-    placeholder="Message"
+    placeholder="{{ 'contact-me-form.msg' | translate }}"
     [(ngModel)]="contactData.message"
     (click)="mailSendTextReset()"
     required
   ></textarea>
   <div class="error-msg">
     @if (!msg.valid && msg.touched) {
-    <span>More than 10 letters are required</span>
+    <span>{{ "contact-me-form.invalid-msg" | translate }}</span>
     }
   </div>
   <div class="privacy-policy">
@@ -66,25 +66,27 @@
       required
     />
     <label for="checkbox">
-      I've read the
-      <a href="privacy-policy" target="_blank"> privacy policy </a>
-      and agree to the processing of my data as outlined.
+      {{ "contact-me-form.privacy-policy-firstText" | translate }}
+      <a href="privacy-policy" target="_blank">
+        {{ "contact-me-form.privacy-policy-link" | translate }}
+      </a>
+      {{ "contact-me-form.privacy-policy-lasttext" | translate }}
     </label>
   </div>
   <div class="error-msg">
     @if (!checkbox.valid && checkbox.touched) {
-    <span>You have to accept the privacy policy</span>
+    <span>{{ "contact-me-form.invalid-checkbox" | translate }}</span>
     }
   </div>
   @if (mailSend) {
   <p>
-    Your message has been sent successfully.<br />
-    I will contact you shortly.
+    {{ "contact-me-form.msg-send0" | translate }}<br />
+    {{ "contact-me-form.msg-send1" | translate }}
   </p>
   }
   <div class="button">
     <app-button
-      [buttonText]="'Send'"
+      [buttonText]="'contact-me-form.button-send' | translate"
       [isButtonColored]="false"
       [disabled]="
         name.invalid ||

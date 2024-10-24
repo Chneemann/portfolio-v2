@@ -1,4 +1,67 @@
 {
+  "header": {
+    "about-me": "Über mich",
+    "my-skills": "Meine Fähigkeiten",
+    "portfolio": "Portfolio",
+    "contact-me": "Kontaktiere mich"
+  },
+  "landing-page": {
+    "greeting": "Hi, ich bin",
+    "title": "Full-Stack Entwickler",
+    "button-contact": "Kontaktiere mich",
+    "button-cv": "CV herunterladen"
+  },
+  "about-me": {
+    "headline": "Über mich",
+    "description": "Hey! Ich bin Andre, ein Full-Stack-Entwickler aus Karlsruhe. Schon seit meiner Kindheit habe ich mich fürs Programmieren begeistert, als ich das erste Mal einen Computer in die Hände bekam. Diese Faszination hat sich im Laufe der Jahre zu einer echten Leidenschaft entwickelt. Heute habe ich das Glück, mein Hobby zum Beruf gemacht zu haben, und stelle mich jeden Tag spannenden neuen Herausforderungen in der Webentwicklung.",
+    "bulb": "Während meiner Ausbildung an der Developer Akademie habe ich viel praktische Erfahrung durch Projekte und Code-Reviews gesammelt. Ich konnte dieses Wissen in vielen meiner eigenen Projekte sowie in Gruppenprojekten vertiefen und umsetzen.",
+    "puzzle": "Falls ich deine Neugier geweckt habe, lade ich dich herzlich ein, einen Blick auf meine bisherigen Arbeiten zu werfen. So kannst du dir einen Eindruck von meinen Fähigkeiten verschaffen."
+  },
+  "my-skills": {
+    "headline": "Meine Fähigkeiten",
+    "description": "Durch die Arbeit an verschiedenen Projekten konnte ich mein Wissen und meine Fähigkeiten im Bereich Full-Stack Entwicklung kontinuierlich erweitern und vertiefen. Ich habe umfangreiche Erfahrungen im Umgang mit Technologien wie Typescript, JavaScript und Python gesammelt sowie in der Arbeit mit modernen Frameworks wie Angular und Django."
+  },
+  "portfolio": {
+    "headline": "Portfolio",
+    "description": "Hier finden Sie eine Auswahl meiner Projekte, die verschiedene Aspekte meiner Entwicklungsfähigkeiten präsentieren. Erkunden Sie diese interaktiv, um einen näheren Blick auf meine Fähigkeiten in Aktion zu werfen. Durchstöbern Sie meine Arbeiten und tauchen Sie in die Details ein, um zu sehen, wie ich Ideen mit sauberem, effektiven Code zum Leben erwecke.",
+    "project-videoflix": "Videoplattform zum Teilen und Entdecken von Videos. Laden Sie Inhalte hoch, sehen Sie sich Videos an und streamen Sie sie in verschiedenen Qualitätsstufen – alles in einer benutzerfreundlichen Oberfläche, die das Videoerlebnis verbessert.",
+    "project-dabubble": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, der Echtzeit-Nachrichtenübertragung und einer robusten Kanalorganisation.",
+    "project-join": "Aufgabenmanager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzern und Kategorien zu, um eine effiziente Verwaltung sicherzustellen.",
+    "button-live-test": "Live-Test"
+  },
+  "contact-me": {
+    "headline": "Kontakt",
+    "problem": "Hast du ein Problem zu lösen?",
+    "description": "Bitte benutze dieses Formular, um mit mir in Kontakt zu treten. Ich freue mich darauf, von dir zu hören, deine Gedanken zu erfahren und zu deinen Projekten beizutragen.",
+    "question": "Brauchst du einen Full-Stack Entwickler?",
+    "contact": "Kontaktiere mich!"
+  },
+  "contact-me-form": {
+    "name": "Name",
+    "email": "E-Mail",
+    "msg": "Nachricht",
+    "privacy-policy-firstText": "Ich habe die",
+    "privacy-policy-link": "Datenschutzerklärung",
+    "privacy-policy-lasttext": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "btn": "Absenden",
+    "invalid-name": "Bitte gib deinen Namen ein",
+    "invalid-email0": "Bitte gib deine E-Mail-Adresse ein",
+    "invalid-email1": "Das ist kein gültiges E-Mail-Format",
+    "invalid-msg": "Es sind mehr als 10 Buchstaben erforderlich",
+    "invalid-checkbox": "Du musst die Datenschutzerklärung akzeptieren",
+    "msg-send0": "Deine Nachricht wurde erfolgreich gesendet.",
+    "msg-send1": "Ich werde dich in Kürze kontaktieren.",
+    "button-send": "Absenden"
+  },
+  "footer": {
+    "home": "Startseite",
+    "about-me": "Über mich",
+    "my-skills": "Meine Fähigkeiten",
+    "portfolio": "Portfolio",
+    "contact-me": "Kontaktiere mich",
+    "privacy-policy": "Datenschutzerklärung",
+    "legal-notice": "Impressum"
+  },
   "imprint": {
     "headline": "Imprint",
     "tmg": "Angaben gemäß §5 TMG",

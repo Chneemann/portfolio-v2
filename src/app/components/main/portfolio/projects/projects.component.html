@@ -15,18 +15,18 @@
       <h3>{{ project.name }}</h3>
       <h4>{{ project.languages }}</h4>
       <p>
-        {{ project.description }}
+        {{ "portfolio.project-" + (project.name | lowercase) | translate }}
       </p>
       <div class="btns">
         <a href="{{ project.linkLiveTest }}" target="_blank">
           <app-button
-            [buttonText]="'Live test'"
+            [buttonText]="'portfolio.button-live-test' | translate"
             [isButtonColored]="true"
           ></app-button>
         </a>
         <a href="{{ project.linkGithub }}" target="_blank">
           <app-button
-            [buttonText]="'Github'"
+            [buttonText]="'GitHub'"
             [isButtonColored]="false"
           ></app-button>
         </a>

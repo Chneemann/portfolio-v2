@@ -18,13 +18,13 @@ h2 {
   padding: 48px;
 }
 
-.skills {
+.my-skills {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.skills-description {
+.my-skills-description {
   padding-bottom: 12px;
   p {
     font-size: 20px;
@@ -33,7 +33,7 @@ h2 {
   }
 }
 
-.skills-list {
+.my-skills-list {
   width: 710px;
   height: fit-content;
   padding: 18px;

@@ -3,22 +3,24 @@
   <nav>
     <ul>
       <li>
-        <a href="#about-me" [class.active]="activeSection === 'about-me'"
-          >About me</a
-        >
+        <a href="#about-me" [class.active]="activeSection === 'about-me'">{{
+          "header.about-me" | translate
+        }}</a>
       </li>
       <li>
-        <a href="#skills" [class.active]="activeSection === 'skills'">Skills</a>
+        <a href="#my-skills" [class.active]="activeSection === 'my-skills'">{{
+          "header.my-skills" | translate
+        }}</a>
       </li>
       <li>
-        <a href="#portfolio" [class.active]="activeSection === 'portfolio'"
-          >Portfolio</a
-        >
+        <a href="#portfolio" [class.active]="activeSection === 'portfolio'">{{
+          "header.portfolio" | translate
+        }}</a>
       </li>
       <li>
-        <a href="#contact-me" [class.active]="activeSection === 'contact-me'"
-          >Contact me</a
-        >
+        <a href="#contact-me" [class.active]="activeSection === 'contact-me'">{{
+          "header.contact-me" | translate
+        }}</a>
       </li>
       <li>
         <a (click)="switchLanguage('en')" [class.active]="currentLang === 'en'">

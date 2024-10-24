@@ -4,19 +4,19 @@
     <nav>
       <ul>
         <li>
-          <a href="#top">Home</a>
+          <a href="#top">{{ "footer.home" | translate }}</a>
         </li>
         <li>
-          <a href="#about-me">About me</a>
+          <a href="#about-me">{{ "footer.about-me" | translate }}</a>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <a href="#skills">{{ "footer.my-skills" | translate }}</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">{{ "footer.portfolio" | translate }}</a>
         </li>
         <li>
-          <a href="#contact-me">Contact me</a>
+          <a href="#contact-me">{{ "footer.contact-me" | translate }}</a>
         </li>
       </ul>
     </nav>
@@ -56,9 +56,11 @@
       <div class="line"></div>
       <p>&#169; Andre Kempf 2024</p>
       <p>
-        <a routerLink="privacy-policy">Privacy Policy</a>
+        <a routerLink="privacy-policy">{{
+          "footer.privacy-policy" | translate
+        }}</a>
         <span>|</span>
-        <a routerLink="legal-notice">Legal Notice</a>
+        <a routerLink="legal-notice">{{ "footer.legal-notice" | translate }}</a>
       </p>
     </div>
   </div>

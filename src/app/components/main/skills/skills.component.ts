@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { TranslateDirective, TranslatePipe } from '@codeandweb/ngx-translate';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe, TranslateDirective],
   templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss'
+  styleUrl: './skills.component.scss',
 })
-export class SkillsComponent {
-
-}
+export class SkillsComponent {}

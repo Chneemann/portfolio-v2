@@ -1,8 +1,8 @@
 <section>
   <div class="hero">
-    <div class="hero-greeting">Hi I am</div>
+    <div class="hero-greeting">{{ "landing-page.greeting" | translate }}</div>
     <div class="hero-name">Andre Kempf</div>
-    <div class="hero-title">Full-Stack Developer</div>
+    <div class="hero-title">{{ "landing-page.title" | translate }}</div>
     <div class="hero-social">
       <a
         href="https://github.com/Chneemann/"
@@ -31,14 +31,14 @@
     <div class="hero-button">
       <a href="#contact-me">
         <app-button
-          [buttonText]="'Contact me'"
+          [buttonText]="'landing-page.button-contact' | translate"
           [isButtonColored]="true"
         ></app-button>
       </a>
       <!-- TODO add cv -->
       <a href="download/cv.pdf" download="cv.pdf">
         <app-button
-          [buttonText]="'Download CV'"
+          [buttonText]="'landing-page.button-cv' | translate"
           [isButtonColored]="false"
         ></app-button>
       </a>

@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
 import { LanguageService } from '../../../services/language.service';
+import { TranslateDirective, TranslatePipe } from '@codeandweb/ngx-translate';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, LogoComponent],
+  imports: [CommonModule, LogoComponent, TranslatePipe, TranslateDirective],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

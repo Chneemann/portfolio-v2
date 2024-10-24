@@ -1,4 +1,67 @@
 {
+  "header": {
+    "about-me": "About me",
+    "my-skills": "My Skills",
+    "portfolio": "Portfolio",
+    "contact-me": "Contact me"
+  },
+  "landing-page": {
+    "greeting": "Hi I am",
+    "title": "Full-Stack Developer",
+    "button-contact": "Contact me",
+    "button-cv": "Download CV"
+  },
+  "about-me": {
+    "headline": "About me",
+    "description": "Hey there! I'm Andre, a full-stack developer from Karlsruhe. I had a passion for coding since childhood when I first got my hands on a computer. Over the years, that fascination has grown into a genuine love for the craft. Now, I'm fortunate enough to have turned my hobby into a career, tackling exciting new challenges in web development every day.",
+    "bulb": "During my training at Developer Akademie, I gained plenty of practical experience through projects and code reviews. I was able to deepen and implement this knowledge in many of my own projects as well as group projects.",
+    "puzzle": "In case I've piqued your curiosity, I warmly invite you to take a look at my previous works. This way, you can gain an impression of my skills."
+  },
+  "my-skills": {
+    "headline": "My Skills",
+    "description": "By working on a variety of projects, I have been able to continuously expand and deepen my knowledge and skills in full-stack development. I have gained extensive experience in the use of technologies such as Typescript, JavaScript and Python, as well as in working with modern frameworks such as Angular and Django."
+  },
+  "portfolio": {
+    "headline": "Portfolio",
+    "description": "Here you will find a selection of my projects, each showcasing different aspects of my development skills. Explore them interactively to get a closer look at my abilities in action. Browse through my work and immerse yourself in the details, seeing how I bring ideas to life with clean, effective code.",
+    "project-videoflix": "Video platform for sharing and discovering videos. Upload, view, and stream content in various quality levels, all within a user-friendly interface designed to enhance the video experience.",
+    "project-dabubble": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+    "project-join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories to ensure efficient management.",
+    "button-live-test": "Live Test"
+  },
+  "contact-me": {
+    "headline": "Contact",
+    "problem": "Got a problem to solve?",
+    "description": "Please use this form to get in touch with me. I look forward to hearing from you, learning your thoughts, and contributing to your projects.",
+    "question": "Need a full-stack developer?",
+    "contact": "Contact me!"
+  },
+  "contact-me-form": {
+    "name": "Name",
+    "email": "Email",
+    "msg": "Message",
+    "privacy-policy-firstText": "I've read the",
+    "privacy-policy-link": "privacy policy",
+    "privacy-policy-lasttext": "and agree to the processing of my data as outlined.",
+    "btn": "Send",
+    "invalid-name": "Please enter your name",
+    "invalid-email0": "Please enter your email",
+    "invalid-email1": "This is not a valid email format",
+    "invalid-msg": "More than 10 letters are required",
+    "invalid-checkbox": "You have to accept the privacy policy",
+    "msg-send0": "Your message has been sent successfully.",
+    "msg-send1": "I will contact you shortly.",
+    "button-send": "Send"
+  },
+  "footer": {
+    "home": "Home",
+    "about-me": "About me",
+    "my-skills": "My Skills",
+    "portfolio": "Portfolio",
+    "contact-me": "Contact me",
+    "privacy-policy": "Privacy Policy",
+    "legal-notice": "Legal Notice"
+  },
   "imprint": {
     "headline": "Imprint",
     "tmg": "Information according to §5 TMG",
