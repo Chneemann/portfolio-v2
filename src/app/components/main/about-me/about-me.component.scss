@@ -15,8 +15,35 @@ h2 {
   margin-bottom: 48px;
 }
 
+.about-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 18px;
+  border-radius: 8px;
+  background-color: var(--color-ebony);
+  img {
+    width: auto;
+    height: 400px;
+  }
+}
+
+.spacer {
+  width: 8%;
+}
+
+.about-me-content {
+  width: fit-content;
+}
+
 .about-me-description {
-  text-align: center;
   padding-bottom: 12px;
   p {
     font-size: 20px;
