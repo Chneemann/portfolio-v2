@@ -57,3 +57,41 @@ h2 {
     }
   }
 }
+
+/* Responsive - Mobile */
+@media only screen and (max-width: 1300px) {
+  .my-skills-list {
+    width: 485px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .my-skills {
+    flex-direction: column-reverse;
+  }
+
+  .my-skills-list {
+    width: 610px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .my-skills-list {
+    width: 485px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .my-skills-list {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .my-skills-list {
+    width: fit-content;
+    img {
+      width: 90px;
+    }
+  }
+}
