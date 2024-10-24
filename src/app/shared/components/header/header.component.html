@@ -11,31 +11,51 @@
     </label>
     <ul>
       <li>
-        <a href="#about-me" [class.active]="activeSection === 'about-me'">{{
-          "header.about-me" | translate
-        }}</a>
+        <a
+          href="#about-me"
+          (click)="closeMenu(navigationCheckbox)"
+          [class.active]="activeSection === 'about-me'"
+          >{{ "header.about-me" | translate }}</a
+        >
       </li>
       <li>
-        <a href="#my-skills" [class.active]="activeSection === 'my-skills'">{{
-          "header.my-skills" | translate
-        }}</a>
+        <a
+          href="#my-skills"
+          (click)="closeMenu(navigationCheckbox)"
+          [class.active]="activeSection === 'my-skills'"
+          >{{ "header.my-skills" | translate }}</a
+        >
       </li>
       <li>
-        <a href="#portfolio" [class.active]="activeSection === 'portfolio'">{{
-          "header.portfolio" | translate
-        }}</a>
+        <a
+          href="#portfolio"
+          (click)="closeMenu(navigationCheckbox)"
+          [class.active]="activeSection === 'portfolio'"
+          >{{ "header.portfolio" | translate }}</a
+        >
       </li>
       <li>
-        <a href="#contact-me" [class.active]="activeSection === 'contact-me'">{{
-          "header.contact-me" | translate
-        }}</a>
+        <a
+          href="#contact-me"
+          (click)="closeMenu(navigationCheckbox)"
+          [class.active]="activeSection === 'contact-me'"
+          >{{ "header.contact-me" | translate }}</a
+        >
       </li>
       <li>
-        <a (click)="switchLanguage('en')" [class.active]="currentLang === 'en'">
+        <a
+          (click)="switchLanguage('en')"
+          (click)="closeMenu(navigationCheckbox)"
+          [class.active]="currentLang === 'en'"
+        >
           EN
         </a>
         /
-        <a (click)="switchLanguage('de')" [class.active]="currentLang === 'de'">
+        <a
+          (click)="switchLanguage('de')"
+          (click)="closeMenu(navigationCheckbox)"
+          [class.active]="currentLang === 'de'"
+        >
           DE
         </a>
       </li>

@@ -1,5 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  OnInit,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
 import { LanguageService } from '../../../services/language.service';
 import { TranslateDirective, TranslatePipe } from '@codeandweb/ngx-translate';
@@ -12,14 +19,26 @@ import { TranslateDirective, TranslatePipe } from '@codeandweb/ngx-translate';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent implements OnInit {
+  @ViewChild('navigationCheckbox') navigationCheckbox!: ElementRef;
   activeSection: string = '';
   currentLang: string = '';
 
-  constructor(private langService: LanguageService) {}
+  constructor(
+    private langService: LanguageService,
+    private renderer: Renderer2,
+    private elementRef: ElementRef
+  ) {}
 
   ngOnInit(): void {
     this.onScroll();
     this.getCurrentLanguage();
+    this.checkboxChange();
+  }
+
+  checkboxChange() {
+    this.renderer.listen('window', 'click', (event: Event) => {
+      this.closeMenuOnOutsideClick(event);
+    });
   }
 
   getCurrentLanguage() {
@@ -52,5 +71,25 @@ export class HeaderComponent implements OnInit {
     });
 
     this.activeSection = currentSection;
+  }
+
+  closeMenu(navigationCheckbox: HTMLInputElement) {
+    navigationCheckbox.checked = false;
+  }
+
+  closeMenuOnOutsideClick(event: Event) {
+    const checkbox = this.navigationCheckbox.nativeElement;
+    const navMenu = this.elementRef.nativeElement.querySelector('nav');
+    const label = this.elementRef.nativeElement.querySelector(
+      'label[for="navigation"]'
+    );
+
+    if (
+      checkbox.checked &&
+      !navMenu.contains(event.target) &&
+      !label.contains(event.target)
+    ) {
+      checkbox.checked = false;
+    }
   }
 }

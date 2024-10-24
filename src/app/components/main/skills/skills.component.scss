@@ -73,11 +73,21 @@ h2 {
   .my-skills-list {
     width: 610px;
   }
+
+  .spacer {
+    padding: 12px;
+  }
 }
 
 @media only screen and (max-width: 660px) {
   .my-skills-list {
     width: 485px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    padding-top: 50px;
   }
 }
 
