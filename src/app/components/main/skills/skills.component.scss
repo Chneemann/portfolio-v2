@@ -51,9 +51,9 @@ h2 {
     &:hover {
       transform: perspective(800px) rotateY(-15deg) translateY(0px)
         rotateX(10deg) scale(1.2);
-      filter: brightness(0) saturate(100%) invert(69%) sepia(71%)
-        saturate(5127%) hue-rotate(3deg) brightness(108%) contrast(99%)
-        drop-shadow(0 4px 15px rgba(255, 140, 0, 0.5));
+      filter: drop-shadow(0 4px 15px rgba(255, 140, 0, 0.5)) brightness(0)
+        saturate(100%) invert(69%) sepia(71%) saturate(5127%) hue-rotate(3deg)
+        brightness(108%) contrast(99%);
     }
   }
 }

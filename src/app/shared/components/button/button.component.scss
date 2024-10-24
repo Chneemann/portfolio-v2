@@ -28,6 +28,7 @@ button {
 }
 
 .button-orange {
+  border: 2px solid var(--color-orange-sunset);
   background: linear-gradient(90deg, #fd6f00, #e46400);
   &:hover {
     background: linear-gradient(90deg, #ff8a00, #ff6a00);
