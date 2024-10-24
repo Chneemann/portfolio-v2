@@ -74,6 +74,14 @@ h2 {
   .spacer {
     display: none;
   }
+
+  .about-me-description {
+    text-align: center;
+  }
+
+  .about-me-item {
+    padding: 24px 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -82,7 +90,6 @@ h2 {
   }
 
   .about-me-item {
-    padding: 12px;
     img {
       width: 60px;
       height: 60px;
