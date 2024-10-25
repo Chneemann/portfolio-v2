@@ -81,6 +81,10 @@
 }
 
 @media only screen and (max-width: 520px) {
+  .content {
+    padding: 12px;
+  }
+
   .btns {
     flex-direction: column;
     align-items: center;

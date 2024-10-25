@@ -20,7 +20,7 @@ h2 {
 
 .my-skills {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
 }
 
@@ -101,8 +101,10 @@ h2 {
 @media only screen and (max-width: 440px) {
   .my-skills-list {
     width: fit-content;
+    padding: 12px;
     img {
       width: 90px;
+      padding: 8px;
     }
   }
 }

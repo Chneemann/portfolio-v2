@@ -214,6 +214,11 @@ section {
 
 @media only screen and (max-width: 420px) {
   .hero-experience {
-    width: 270px;
+    width: fit-content;
+    padding: 12px;
+    img {
+      width: 90px;
+      padding: 8px;
+    }
   }
 }
