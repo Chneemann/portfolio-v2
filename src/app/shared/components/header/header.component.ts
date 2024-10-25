@@ -29,22 +29,51 @@ export class HeaderComponent implements OnInit {
     private elementRef: ElementRef
   ) {}
 
+  /**
+   * Initialize the component.
+   *
+   * Call onScroll and getCurrentLanguage methods to initialize
+   * the active section and current language.
+   *
+   * Also, call the checkboxChange method to listen to the
+   * checkbox click event and close the menu outside click.
+   */
   ngOnInit(): void {
     this.onScroll();
     this.getCurrentLanguage();
     this.checkboxChange();
   }
 
+  /**
+   * Add a global click event listener to close the menu when the user
+   * clicks outside of the navigation.
+   */
   checkboxChange() {
     this.renderer.listen('window', 'click', (event: Event) => {
       this.closeMenuOnOutsideClick(event);
     });
   }
 
+  /**
+   * Get the current language from the language service.
+   *
+   * This method will get the current language from the language service and
+   * update the currentLang property of this component.
+   *
+   * @returns {void}
+   */
   getCurrentLanguage() {
     this.currentLang = this.langService.getCurrentLanguage();
   }
 
+  /**
+   * Switch the language of the application to the given language.
+   *
+   * This method will call the switchLanguage method of the language service and
+   * update the currentLang property of this component.
+   *
+   * @param lang The language to switch to.
+   */
   switchLanguage(lang: string) {
     this.langService.switchLanguage(lang);
     this.getCurrentLanguage();
@@ -73,10 +102,29 @@ export class HeaderComponent implements OnInit {
     this.activeSection = currentSection;
   }
 
+  /**
+   * Close the navigation menu by setting the 'checked' property of the
+   * navigation checkbox to false.
+   *
+   * This method is called when the user clicks on the navigation label or on
+   * the navigation menu itself.
+   *
+   * @param navigationCheckbox The navigation checkbox element.
+   */
   closeMenu(navigationCheckbox: HTMLInputElement) {
     navigationCheckbox.checked = false;
   }
 
+  /**
+   * Closes the navigation menu when a click is detected outside the navigation
+   * elements.
+   *
+   * This method checks if the navigation checkbox is checked and if the click
+   * event target is not within the navigation menu or its label. If both conditions
+   * are true, it unchecks the navigation checkbox to close the menu.
+   *
+   * @param event The click event that triggered the listener.
+   */
   closeMenuOnOutsideClick(event: Event) {
     const checkbox = this.navigationCheckbox.nativeElement;
     const navMenu = this.elementRef.nativeElement.querySelector('nav');

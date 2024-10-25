@@ -14,6 +14,11 @@ export class LanguageService {
     this.translate.setDefaultLang(this.currentLang);
   }
 
+  /**
+   * Switches the language for the application.
+   *
+   * @param lang language code: 'en' or 'de'
+   */
   switchLanguage(lang: string) {
     if (lang === 'en') {
       this.currentLang = 'en';
@@ -23,6 +28,11 @@ export class LanguageService {
     this.translate.use(this.currentLang);
   }
 
+  /**
+   * Retrieves the current language of the application.
+   *
+   * @returns The current language code as a string.
+   */
   getCurrentLanguage(): string {
     return this.currentLang;
   }

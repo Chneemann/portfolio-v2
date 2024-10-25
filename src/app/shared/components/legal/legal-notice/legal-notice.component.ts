@@ -9,6 +9,9 @@ import { TranslatePipe, TranslateDirective } from '@codeandweb/ngx-translate';
   styleUrl: './legal-notice.component.scss',
 })
 export class LegalNoticeComponent implements OnInit {
+  /**
+   * Scroll to the top of the page when the component is initialized.
+   */
   ngOnInit(): void {
     window.scrollTo({ top: 0 });
   }

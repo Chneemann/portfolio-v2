@@ -13,6 +13,10 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 export class AppComponent implements OnInit {
   title = 'portfolio-v2';
 
+  /**
+   * Initializes the AOS (Animate On Scroll) library asynchronously when the component is initialized.
+   * This function imports the 'aos' module dynamically and calls its 'init' method to set up animations.
+   */
   async ngOnInit() {
     const AOS = (await import('aos')).default;
     AOS.init();
