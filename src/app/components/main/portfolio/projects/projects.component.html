@@ -17,7 +17,9 @@
         <h3>{{ project.name }}</h3>
         <h4>{{ project.languages }}</h4>
         <p>
-          {{ "portfolio.project-" + (project.name | lowercase) | translate }}
+          {{
+            "portfolio.project-" + (project.description | lowercase) | translate
+          }}
         </p>
         <div class="btns">
           <a href="{{ project.linkLiveTest }}" target="_blank">

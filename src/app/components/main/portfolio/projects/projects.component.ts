@@ -15,6 +15,7 @@ export class ProjectsComponent {
     {
       name: 'Videoflix',
       image: 'videoflix.png',
+      description: 'videoflix',
       languages: 'Django REST | Python | Angular | TypeScript',
       linkLiveTest: 'https://videoflix.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/videoflix',
@@ -22,16 +23,26 @@ export class ProjectsComponent {
     {
       name: 'DABubble',
       image: 'dabubble.png',
+      description: 'dabubble',
       languages: 'Angular | TypeScript | Firebase',
       linkLiveTest: 'https://dabubble.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/dabubble',
     },
     {
-      name: 'Join',
+      name: 'Join (Angular)',
       image: 'join-angular.png',
+      description: 'join',
       languages: 'Angular | TypeScript | Firebase',
       linkLiveTest: 'https://join.andre-kempf.com',
       linkGithub: 'https://github.com/Chneemann/join',
+    },
+    {
+      name: 'Join (React)',
+      image: 'join-react.png',
+      description: 'join',
+      languages: 'React | TypeScript | Firebase',
+      linkLiveTest: 'https://join-react.andre-kempf.com',
+      linkGithub: 'https://github.com/Chneemann/join-react',
     },
   ];
 
