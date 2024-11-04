@@ -19,7 +19,7 @@
   },
   "my-skills": {
     "headline": "My Skills",
-    "description": "By working on a variety of projects, I have been able to continuously expand and deepen my knowledge and skills in full-stack development. I have gained extensive experience in the use of technologies such as Typescript, JavaScript and Python, as well as in working with modern frameworks such as Angular and Django."
+    "description": "By working on a variety of projects, I have been able to continuously expand and deepen my knowledge and skills in full-stack development. I have gained extensive experience in the use of technologies such as Typescript, JavaScript and Python, as well as in working with modern frameworks such as Angular, React and Django."
   },
   "portfolio": {
     "headline": "Portfolio",
