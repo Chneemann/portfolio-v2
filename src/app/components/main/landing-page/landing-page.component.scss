@@ -24,7 +24,7 @@ section {
   font-size: 32px;
   font-weight: 700;
   line-height: 33.6px;
-  padding-bottom: 24px;
+  padding-bottom: 18px;
   color: var(--color-ashen-gray);
 }
 
@@ -55,22 +55,7 @@ section {
   display: flex;
   justify-content: flex-start;
   width: fit-content;
-  gap: 36px;
-  margin: 0;
-  padding: 48px 0;
-  cursor: pointer;
-  img {
-    width: 40px;
-    height: 40px;
-    transform: rotateX(0deg);
-    transition: 0.6s ease all;
-    &:hover {
-      transform: scale(1.1);
-      filter: drop-shadow(0 4px 15px rgba(255, 140, 0, 0.5)) brightness(0)
-        saturate(100%) invert(69%) sepia(71%) saturate(5127%) hue-rotate(3deg)
-        brightness(108%) contrast(99%);
-    }
-  }
+  padding: 24px 0;
 }
 
 .hero-images {

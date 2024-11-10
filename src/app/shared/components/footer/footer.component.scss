@@ -42,25 +42,6 @@ nav ul {
   }
 }
 
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 36px;
-  cursor: pointer;
-  img {
-    width: 40px;
-    height: 40px;
-    transform: rotateX(0deg);
-    transition: 0.6s ease all;
-    &:hover {
-      transform: scale(1.1);
-      filter: drop-shadow(0 4px 15px rgba(255, 140, 0, 0.5)) brightness(0)
-        saturate(100%) invert(69%) sepia(71%) saturate(5127%) hue-rotate(3deg)
-        brightness(108%) contrast(99%);
-    }
-  }
-}
-
 .contact {
   display: flex;
   justify-content: center;
