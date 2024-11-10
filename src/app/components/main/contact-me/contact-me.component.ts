@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { FormComponent } from './form/form.component';
-import { TranslateDirective, TranslatePipe } from '@codeandweb/ngx-translate';
+import { TranslatePipe } from '@codeandweb/ngx-translate';
 
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [FormComponent, TranslatePipe, TranslateDirective],
+  imports: [FormComponent, TranslatePipe],
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss',
 })

@@ -2,12 +2,12 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ButtonComponent } from '../../../../shared/components/button/button.component';
 import { HttpClient } from '@angular/common/http';
-import { TranslateDirective, TranslatePipe } from '@codeandweb/ngx-translate';
+import { TranslatePipe } from '@codeandweb/ngx-translate';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [FormsModule, ButtonComponent, TranslatePipe, TranslateDirective],
+  imports: [FormsModule, ButtonComponent, TranslatePipe],
   templateUrl: './form.component.html',
   styleUrl: './form.component.scss',
 })

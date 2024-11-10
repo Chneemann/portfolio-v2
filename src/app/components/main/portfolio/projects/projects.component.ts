@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../../../../shared/components/button/button.component';
-import { TranslateDirective, TranslatePipe } from '@codeandweb/ngx-translate';
+import { TranslatePipe } from '@codeandweb/ngx-translate';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, ButtonComponent, TranslatePipe, TranslateDirective],
+  imports: [CommonModule, ButtonComponent, TranslatePipe],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })

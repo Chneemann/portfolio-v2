@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { TranslateDirective, TranslatePipe } from '@codeandweb/ngx-translate';
+import { TranslatePipe } from '@codeandweb/ngx-translate';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss',
 })

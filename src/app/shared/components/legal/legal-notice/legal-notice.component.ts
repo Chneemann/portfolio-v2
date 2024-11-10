@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslatePipe, TranslateDirective } from '@codeandweb/ngx-translate';
+import { TranslatePipe } from '@codeandweb/ngx-translate';
 
 @Component({
   selector: 'app-imprint',
   standalone: true,
-  imports: [TranslatePipe, TranslateDirective],
+  imports: [TranslatePipe],
   templateUrl: './legal-notice.component.html',
   styleUrl: './legal-notice.component.scss',
 })
