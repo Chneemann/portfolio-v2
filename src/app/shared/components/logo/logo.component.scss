@@ -1,4 +1,4 @@
-@import "./../../../../assets/styles/colors.scss";
+@use "./../../../../assets/styles/colors.scss" as *;
 
 .logo a {
   font-family: "K2D", sans-serif;
