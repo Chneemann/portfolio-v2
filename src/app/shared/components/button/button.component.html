@@ -1,6 +1,38 @@
-<button
-  [ngClass]="isButtonColored ? 'button-orange' : 'button-gray'"
-  [disabled]="disabled"
->
-  <p>{{ buttonText }}</p>
-</button>
+<div class="button-dropdown-wrapper">
+  <button
+    [ngClass]="isButtonColored ? 'button-orange' : 'button-gray'"
+    [disabled]="disabled"
+    (click)="toggleDropdown()"
+  >
+    @if (linkFrontend && !linkBackend) {
+    <a [href]="linkFrontend" target="_blank"
+      ><p>{{ buttonText }}</p></a
+    >
+    } @else {
+    <p>{{ buttonText }}</p>
+    }
+  </button>
+
+  @if (dropdownOpen && linkBackend) {
+  <div class="dropdown-menu">
+    <a
+      *ngIf="linkFrontend"
+      [href]="linkFrontend"
+      target="_blank"
+      class="dropdown-item"
+      (click)="toggleDropdown()"
+    >
+      Front-End
+    </a>
+    <a
+      *ngIf="linkBackend"
+      [href]="linkBackend"
+      target="_blank"
+      class="dropdown-item"
+      (click)="toggleDropdown()"
+    >
+      Back-End
+    </a>
+  </div>
+  }
+</div>

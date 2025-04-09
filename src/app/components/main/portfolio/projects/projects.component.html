@@ -1,41 +1,48 @@
-<div id="portfolio-single">
-  <div
-    *ngFor="let project of projects; let i = index"
-    [attr.data-aos]="i % 2 === 0 ? 'flip-right' : 'flip-left'"
-    data-aos-offset="300"
-    data-aos-easing="ease-in-sine"
-  >
-    <div class="content" [ngStyle]="getProjectStyle(i)">
-      <div class="img" [ngStyle]="getProjectStyle(i)">
-        <img
-          src="assets/img/portfolio/{{ project.image }}"
-          alt="Projekt {{ project.name }}"
-        />
-      </div>
-      <div class="spacer"></div>
-      <div class="description" [ngStyle]="getDescriptionStyle(i)">
-        <h3>{{ project.name }}</h3>
-        <h4>{{ project.languages }}</h4>
-        <p>
-          {{
-            "portfolio.project-" + (project.description | lowercase) | translate
-          }}
-        </p>
-        <div class="btns">
-          <a href="{{ project.linkLiveTest }}" target="_blank">
-            <app-button
-              [buttonText]="'portfolio.button-live-test' | translate"
-              [isButtonColored]="true"
-            ></app-button>
-          </a>
-          <a href="{{ project.linkGithub }}" target="_blank">
-            <app-button
-              [buttonText]="'GitHub'"
-              [isButtonColored]="false"
-            ></app-button>
-          </a>
+@for (project of projects; track project.name; let i = $index) {
+<div
+  [attr.data-aos]="i % 2 === 0 ? 'flip-right' : 'flip-left'"
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine"
+>
+  <div class="project-container" [ngStyle]="getProjectStyle(i)">
+    <div class="img" [ngStyle]="getProjectStyle(i)">
+      <img
+        src="assets/img/portfolio/{{ project.image }}"
+        alt="Projekt {{ project.name }}"
+      />
+    </div>
+    <div class="description" [ngStyle]="getDescriptionStyle(i)">
+      <h3>{{ project.name }}</h3>
+      <div class="tech-stack">
+        <div class="stack">
+          <span class="label">Frontend: </span>
+          <span class="list">{{ project.techStackFrontend }}</span>
         </div>
+        <div class="stack">
+          <span class="label">Backend: </span>
+          <span class="list">{{ project.techStackBackend }}</span>
+        </div>
+      </div>
+      <p>
+        {{
+          "portfolio.project-" + (project.description | lowercase) | translate
+        }}
+      </p>
+      <div class="btns">
+        <a href="{{ project.linkLiveTest }}" target="_blank">
+          <app-button
+            [buttonText]="'portfolio.button-live-test' | translate"
+            [isButtonColored]="true"
+          ></app-button>
+        </a>
+        <app-button
+          [buttonText]="'GitHub'"
+          [isButtonColored]="false"
+          [linkFrontend]="project.linkGithubFrontend"
+          [linkBackend]="project.linkGithubBackend"
+        ></app-button>
       </div>
     </div>
   </div>
 </div>
+}

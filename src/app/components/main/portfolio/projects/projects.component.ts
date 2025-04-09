@@ -11,38 +11,50 @@ import { TranslatePipe } from '@codeandweb/ngx-translate';
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
+  dropdownOpen = false;
+
   projects = [
     {
       name: 'Videoflix',
       image: 'videoflix.png',
       description: 'videoflix',
-      languages: 'Django REST | Python | Angular | TypeScript',
+      techStackFrontend: 'Angular | TypeScript',
+      techStackBackend: 'Django REST | Python | PostgreSQL | Redis',
       linkLiveTest: 'https://videoflix.andre-kempf.com',
-      linkGithub: 'https://github.com/Chneemann/videoflix',
+      linkGithubFrontend:
+        'https://github.com/Chneemann/videoflix/tree/main/frontend',
+      linkGithubBackend:
+        'https://github.com/Chneemann/videoflix/tree/main/backend',
     },
     {
       name: 'DABubble',
       image: 'dabubble.png',
       description: 'dabubble',
-      languages: 'Angular | TypeScript | Firebase',
+      techStackFrontend: 'Angular | TypeScript',
+      techStackBackend: 'Google Firebase',
       linkLiveTest: 'https://dabubble.andre-kempf.com',
-      linkGithub: 'https://github.com/Chneemann/dabubble',
+      linkGithubFrontend: 'https://github.com/Chneemann/dabubble',
+      linkGithubBackend: null,
     },
     {
       name: 'Join (Angular)',
       image: 'join-angular.png',
       description: 'join',
-      languages: 'Angular | TypeScript | Firebase',
+      techStackFrontend: 'Angular | TypeScript',
+      techStackBackend: 'Google Firebase',
       linkLiveTest: 'https://join.andre-kempf.com',
-      linkGithub: 'https://github.com/Chneemann/join',
+      linkGithubFrontend: 'https://github.com/Chneemann/join',
+      linkGithubBackend: null,
     },
     {
       name: 'Join (React)',
       image: 'join-react.png',
       description: 'join',
-      languages: 'React | TypeScript | Firebase',
+      techStackFrontend: 'React | TypeScript',
+      techStackBackend: 'Google Firebase',
       linkLiveTest: 'https://join-react.andre-kempf.com',
-      linkGithub: 'https://github.com/Chneemann/join-react',
+      linkGithubFrontend: 'https://github.com/Chneemann/join-react',
+      linkGithubBackend: null,
     },
   ];
 
